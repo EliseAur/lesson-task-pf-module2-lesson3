@@ -152,17 +152,20 @@ var products = [
 
 var productContainer = document.querySelector("ul");
 
-//for (var i = 0; i < products.length; i++) {
-//var product = products[i];
+for (var i = 0; i < products.length; i++) {
+var product = products[i];
 
-//productContainer.innerHTML = productContainer.innerHTML + "<li>" + product.name + " " + "-" + " " + product.price + "</li>";
+productContainer.innerHTML = productContainer.innerHTML + "<li>" + product.name + " - " + product.price + "</li>";
 
 //productContainer.innerHTML += "<li>" + products[i].name + " - " + products[i].price + "</li>";
-//}
+}
 
 // or
 // (this second example will cause the new li items to be double)
+/*
 for (var i = 0; i < products.length; i++) {
     var details = products[i].name + " - " + products[i].price;
     productContainer.innerHTML = productContainer.innerHTML + "<li>" + details + "</li>";
 }
+*/
+
